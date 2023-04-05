@@ -1,0 +1,97 @@
+.banner {
+  background-image: url(../img/Home/home_banner.png);
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  background-size: cover;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  h2 {
+    color: #fff;
+    margin: 15px 0;
+    font-size: 46px;
+    font-weight: 600;
+  }
+
+  button {
+    background-image: url(../img/Home/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+.category {
+  padding-top: 30px;
+  justify-content: center;
+  margin: 0 auto;
+  display: grid;
+
+  .category-card {
+    width: 370px;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 20px 20px 34px #00000008;
+
+    &:hover .right-icon {
+      background-color: #fff;
+      color: #000;
+      transition: all ease 0.2s;
+    }
+
+    h3 {
+      padding: 9px 8px 6px 15px;
+      line-height: 1;
+      color: #fff;
+      font-size: 23px;
+      text-transform: uppercase;
+    }
+
+    .category-link {
+      // border-radius: 50%;
+      padding: 15px;
+    }
+
+    .right-icon {
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      font-size: 30px;
+    }
+  }
+  .first {
+    background-image: url(../img/Category/men_watch.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  .second {
+    background-image: url(../img/Category/women_watch.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  .third {
+    background-image: url(../img/Category/accessories.png);
+    background-size: cover;
+    background-position: center center;
+  }
+}

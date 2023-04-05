@@ -1,0 +1,93 @@
+// @import url("https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.header {
+  display: flex;
+  font-family: "Spartan", monospace;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #f8f7f4;
+  box-shadow: 0 5px 15px #0000000f;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 100px;
+
+  .nav_link_container {
+    display: flex;
+    justify-content: space-between;
+
+    .nav_link {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0 20px;
+      font-size: 14px;
+      color: #161a21;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .btn_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+
+    .search_form {
+      position: relative;
+      margin-right: 30px;
+
+      .search_input {
+        border: 1px solid #1a1a1a;
+        border-radius: 8px;
+        height: 30px;
+        padding: 19px 15px 15px 10px;
+      }
+
+      .search_icon {
+        position: absolute;
+        right: 5px;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+    }
+
+    .cart_container {
+      position: relative;
+      align-items: center;
+      margin-right: 30px;
+
+      .cart_icon {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+
+      .cart_quantity {
+        position: absolute;
+        top: -7px;
+        padding: 3.3px 0.5px 0 0;
+        right: -17px;
+        font-size: 12px;
+        background-color: #161a21;
+        border-radius: 50%;
+        color: #fff;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+      }
+    }
+
+    .login_container {
+      align-items: center;
+
+      .login_icon {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+    }
+  }
+}
