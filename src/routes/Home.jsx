@@ -2,8 +2,25 @@ import React from "react";
 import "../assets/styles/home.scss";
 import { HiArrowSmRight } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
+import products from "../data/products";
 
 export default function Home() {
+  const menBestSellerItems = products.filter(
+    (product) =>
+      product.id === 3 ||
+      product.id === 11 ||
+      product.id === 16 ||
+      product.id === 18
+  );
+
+  const womenBestSeller = products.filter(
+    (product) =>
+      product.id === 35 ||
+      product.id === 33 ||
+      product.id === 30 ||
+      product.id === 36
+  );
+
   return (
     <>
       <section className="banner">
@@ -43,70 +60,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="best-seller men">
+      <section className="best-seller">
         <h2>MEN'S BEST SELLERS</h2>
-        <NavLink to="/en">
+        <NavLink className="nav-link" to="/men">
           <p>
             View all <HiArrowSmRight className="right-icon" />
           </p>
         </NavLink>
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="product">
-                <img src="/images/KASHMIR/calm.png" alt="Kashmir Calm" />
-                <div className="add-wrapper">
-                  <button className="add-to-cart">Add to cart</button>
-                </div>
-                <div className="description">
-                  <span>KASHMIR</span>
-                  <h5>CALM</h5>
-                  <h4>2.399.000 đ</h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="product">
-                <img src="/images/WEIMAR/heinz.png" alt="Weimar Heinz" />
-                <div className="add-wrapper">
-                  <button className="add-to-cart">Add to cart</button>
-                </div>
-                <div className="description">
-                  <span>WEIMAR</span>
-                  <h5>HEINZ</h5>
-                  <h4>2.599.000 đ</h4>
+            {menBestSellerItems.map((item) => (
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div id={item.id} class="product">
+                  <img src={item.image} alt={item.title} />
+                  <div class="add-wrapper">
+                    <button class="add-to-cart">Add to cart</button>
+                  </div>
+                  <div class="description">
+                    <span>{item.title}</span>
+                    <h5>{item.name}</h5>
+                    <h4>${item.price}</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="product">
-                <img src="/images/DETROIT/I275.png" alt="Detroit I-275" />
-                <div className="add-wrapper">
-                  <button className="add-to-cart">Add to cart</button>
-                </div>
-                <div className="description">
-                  <span>DETROIT</span>
-                  <h5>I-275</h5>
-                  <h4>3.399.000 đ</h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="product">
-                <img src="/images/DETROIT/8mile.png" alt="Detroit 8 MILE" />
-                <div className="add-wrapper">
-                  <button className="add-to-cart">Add to cart</button>
-                </div>
-                <div className="description">
-                  <span>DETROIT</span>
-                  <h5>8 MILE</h5>
-                  <h4>2.899.000 đ</h4>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
