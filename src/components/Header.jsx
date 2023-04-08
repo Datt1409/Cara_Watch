@@ -37,12 +37,16 @@ export default function Header() {
         </form>
 
         <div className="cart_container">
-          <BsHandbagFill className="cart_icon" />
-          <span className="cart_quantity">0</span>
+          <NavLink to="/cart">
+            <BsHandbagFill className="cart_icon" />
+            <span className="cart_quantity">0</span>
+          </NavLink>
         </div>
 
         <div className="login_container">
-          <BsFillPersonFill className="login_icon" />
+          <NavLink to="/login">
+            <BsFillPersonFill className="login_icon" />
+          </NavLink>
         </div>
       </div>
     </header>

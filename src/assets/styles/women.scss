@@ -1,0 +1,15 @@
+@use "../styles/men.scss"; 
+
+.women-banner {
+  background-image: url(../img/Women/women_banner.png);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+  justify-content: center;
+  margin-top: 82px;
+}

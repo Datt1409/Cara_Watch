@@ -13,7 +13,7 @@ export default function Home() {
       product.id === 18
   );
 
-  const womenBestSeller = products.filter(
+  const womenBestSellerItems = products.filter(
     (product) =>
       product.id === 35 ||
       product.id === 33 ||
@@ -70,13 +70,13 @@ export default function Home() {
         <div className="container">
           <div className="row">
             {menBestSellerItems.map((item) => (
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div id={item.id} class="product">
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div id={item.id} className="product">
                   <img src={item.image} alt={item.title} />
-                  <div class="add-wrapper">
-                    <button class="add-to-cart">Add to cart</button>
+                  <div className="add-wrapper">
+                    <button className="add-to-cart">Add to cart</button>
                   </div>
-                  <div class="description">
+                  <div className="description">
                     <span>{item.title}</span>
                     <h5>{item.name}</h5>
                     <h4>${item.price}</h4>
@@ -84,6 +84,86 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="body-banner">
+        <h4>#COLOSSEUM</h4>
+        <h2>COLOSSEUM COLLECTION</h2>
+        <button>Explore more</button>
+      </section>
+
+      <section className="best-seller">
+        <h2>WOMEN'S BEST SELLERS</h2>
+        <NavLink className="nav-link" to="/women">
+          <p>
+            View all <HiArrowSmRight className="right-icon" />
+          </p>
+        </NavLink>
+        <div className="container">
+          <div className="row">
+            {womenBestSellerItems.map((item) => (
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div id={item.id} className="product">
+                  <img src={item.image} alt={item.title} />
+                  <div className="add-wrapper">
+                    <button className="add-to-cart">Add to cart</button>
+                  </div>
+                  <div className="description">
+                    <span>{item.title}</span>
+                    <h5>{item.name}</h5>
+                    <h4>${item.price}</h4>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="gift">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-12 col-sm-12">
+              <div className="gift-box">
+                <h4>Best Valentine Wishes</h4>
+                <h2>To Write To Your Loved One</h2>
+                <button>Read more</button>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12">
+              <div className="gift-box second">
+                <h4>Top 5</h4>
+                <h2>Best Perfume for Men</h2>
+                <button>Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="collection">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="collection-box">
+                <h2>SEASON SALE</h2>
+                <h5>Winter Collection - Up to 30% OFF</h5>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="collection-box second">
+                <h2>UPCOMING COLLECTION</h2>
+                <h5>Spring/Summer 2023</h5>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="collection-box third">
+                <h2>Special Gift</h2>
+                <h5>For This Valentine</h5>
+              </div>
+            </div>
           </div>
         </div>
       </section>

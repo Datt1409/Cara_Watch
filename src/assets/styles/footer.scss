@@ -2,57 +2,67 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+  padding: 40px 80px;
 
-footer .col {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-bottom: 20px;
-  margin-right: 5px;
-}
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+    margin-right: 5px;
 
-footer .logo {
-  margin-bottom: 30px;
-}
+    .logo {
+      margin-bottom: 30px;
+    }
 
-footer h4 {
-  font-size: 14px;
-  padding-bottom: 20px;
-  font-weight: 800;
-}
+    h4 {
+      font-size: 14px;
+      padding-bottom: 20px;
+      font-weight: 800;
+    }
 
-footer p {
-  font-size: 13px;
-  margin: 0 0 8px 0;
-}
+    p {
+      font-size: 13px;
+      margin: 0 0 8px;
 
-footer a {
-  font-size: 13px;
-  text-decoration: none;
-  color: #222;
-  margin-bottom: 10px;
-}
+      strong {
+        font-weight: bolder;
+      }
+    }
 
-footer .follow {
-  margin-top: 20px;
-}
-footer .follow i {
-  color: #465b52;
-  padding-right: 4px;
-  cursor: pointer;
-}
+    .follow {
+      padding-top: 20px;
 
-footer .install .row1 img {
-  border: 1px solid #088178;
-  border-radius: 6px;
-}
+      .icon-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-footer .install img {
-  margin: 10px 0 15px 0;
-}
+      .icon {
+        color: #465b52;
+        font-size: 14px;
+        margin-right: 4px;
+        cursor: pointer;
+      }
+    }
 
-footer .follow i:hover,
-footer a:hover {
-  color: #088178;
+    .nav-link {
+      font-size: 13px;
+      text-decoration: none;
+      color: #222;
+      margin-bottom: 10px;
+    }
+  }
+
+  .download{
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin: 10px 0 10px;
+      border: 1px solid #222;
+      border-radius: 8px;
+    }
+  }
 }

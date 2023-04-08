@@ -1,8 +1,53 @@
-.news_letter {
-    margin-top: 50px;
+.sign-up {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   background-color: #ecebea;
+  padding: 40px 80px;
+  margin-bottom: 40px;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #161a21;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #161a21;
+
+    span {
+      color: red;
+      margin-left: 3px;
+    }
+  }
+
+  .form {
+    display: flex;
+    width: 40%;
+
+    input {
+      height: 3.125rem;
+      padding: 0 1.25em;
+      font-size: 14px;
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 6px 0 0 6px;
+      outline: none;
+    }
+
+    button {
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid #161a21;
+      border-radius: 0 6px 6px 0;
+      width: 40%;
+      background-color: #161a21;
+      color: #fff;
+      white-space: nowrap;
+      height: 3.125rem;
+    }
+  }
 }
