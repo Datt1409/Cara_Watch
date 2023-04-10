@@ -25,9 +25,9 @@ export default function Login() {
               </div>
 
               <div class="form-link">
-                <a href="#" class="forgot-pass">
+                <NavLink to="#" class="forgot-pass">
                   Forgot password?
-                </a>
+                </NavLink>
               </div>
 
               <div class="field button-field">
@@ -38,54 +38,15 @@ export default function Login() {
             <div class="form-link">
               <span>
                 Don't have an account?
-                <a href="#" class="link signup-link">
+                <NavLink to="#" class="link signup-link">
                   Sign up
-                </a>
+                </NavLink>
               </span>
             </div>
           </div>
         </div>
 
-        {/* <div class="form signup">
-          <div class="form-content">
-            <header>Create account</header>
-            <form action="#">
-              <div class="field input-field">
-                <input type="email" placeholder="Email" class="input" />
-              </div>
-
-              <div class="field input-field">
-                <input
-                  type="password"
-                  placeholder="Password"
-                  class="password"
-                />
-                <i class="bx bx-hide eye-icon"></i>
-              </div>
-              <div class="field input-field">
-                <input
-                  type="password"
-                  placeholder="Password"
-                  class="password"
-                />
-                <i class="bx bx-hide eye-icon"></i>
-              </div>
-
-              <div class="field button-field">
-                <button>Create</button>
-              </div>
-            </form>
-
-            <div class="form-link">
-              <span>
-                Already have an account?
-                <a href="#" class="link signup-link">
-                  Log in
-                </a>
-              </span>
-            </div>
-          </div>
-        </div> */}
+     
       </section>
     </>
   );

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/styles/men.scss";
 import products from "../data/products";
 
 export default function Men() {
   const [selectedBrand, setSelectedBrand] = useState("all");
+
 
   const menProducts =
     selectedBrand === "all"
@@ -16,6 +17,10 @@ export default function Men() {
   const handleChange = (e) => {
     setSelectedBrand(e.target.value);
   };
+
+ 
+
+ 
 
   return (
     <>
@@ -40,7 +45,11 @@ export default function Men() {
                 <div id={id} className="product">
                   <img src={image} alt={name} />
                   <div className="add-wrapper">
-                    <button id={id} className="add-to-cart">
+                    <button
+                      id={id}
+                      className="add-to-cart"
+                      
+                    >
                       Add to cart
                     </button>
                   </div>

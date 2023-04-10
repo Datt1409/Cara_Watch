@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Image from "react";
 import { NavLink } from "react-router-dom";
 // import { Image } from "react-dom";
@@ -8,6 +8,10 @@ import { BsHandbagFill, BsFillPersonFill } from "react-icons/bs";
 import "../assets/styles/header.scss";
 
 export default function Header() {
+  const [cartQuantity, setCartQuantity] = useState(
+    parseInt(localStorage.getItem("cartQuantity")) || 0
+  );
+
   return (
     <header className="header container-fluid">
       <img src={logo} alt="logo" />
@@ -39,7 +43,7 @@ export default function Header() {
         <div className="cart_container">
           <NavLink to="/cart">
             <BsHandbagFill className="cart_icon" />
-            <span className="cart_quantity">0</span>
+            <span className="cart_quantity">{cartQuantity}</span>
           </NavLink>
         </div>
 
