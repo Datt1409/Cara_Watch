@@ -26,7 +26,8 @@
   overflow-x: scroll;
 
   table {
-    width: 100%;
+    margin: 20px auto 0;
+    width: 90%;
     border-collapse: collapse;
     table-layout: fixed;
     white-space: nowrap;
@@ -98,6 +99,81 @@
 
     img {
       width: 70%;
+    }
+  }
+}
+
+.purchase {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+
+  .coupon {
+    width: 50%;
+    margin-bottom: 30px;
+
+    h3 {
+      padding-bottom: 15px;
+      font-size: 1.75rem;
+    }
+
+    input {
+      padding: 10px 20px;
+      outline: none;
+      width: 60%;
+      margin-right: 10px;
+      border: 1px solid #e2e9e1;
+    }
+
+    button {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 11px 20px;
+      color: #fff;
+      background-color: #161a21;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: 0.2s;
+    }
+  }
+
+  .subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+
+    h3 {
+      font-size: 1.75rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+
+      td {
+        width: 50%;
+        border: 1px solid #e2e9e1;
+        padding: 10px;
+        font-size: 13px;
+      }
+    }
+
+    button {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 11px 20px;
+      color: #fff;
+      background-color: #161a21;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: 0.2s;
     }
   }
 }

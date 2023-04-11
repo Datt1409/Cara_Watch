@@ -48,12 +48,36 @@ export default function Cart() {
       <section className="purchase">
         <div className="coupon">
           <h3>Apply Coupon</h3>
-          <>
+          <div>
             <input type="text" placeholder="Enter your coupon" />
             <button type="button">Apply</button>
-          </>
+          </div>
         </div>
-        <div className="subtotal"></div>
+        <div className="subtotal">
+          <h3>Total</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>Cart Subtotal</td>
+                <td className="total-price">$140</td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Total</strong>
+                </td>
+                <td>
+                  <strong class="total-price">140$</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button type="button">Proceed to checkout</button>
+        </div>
       </section>
     </>
   );
